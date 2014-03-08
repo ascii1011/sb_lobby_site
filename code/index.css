@@ -1,0 +1,7 @@
+
+  /*borders around the whole index page*/
+  .bdrs{
+  	border-bottom:solid 3px;
+  	border-color:#eee;
+  	float:left;
+  }

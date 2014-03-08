@@ -1,0 +1,80 @@
+.newsTickerContainer {
+	position: absolute;
+	/*background-image: url('img/bg_silver.gif');
+	background-repeat: repeat-x;*/
+	background-color: silver;
+	height: 100px;
+	width: 990px;
+	overflow: hidden;
+	padding-top: 15px;
+	vertical-align:top;
+  	border-bottom:solid 3px;
+  	border-left:solid 3px;
+  	border-right:solid 3px;
+  	border-color:#eee;
+}
+	    
+.newsTicker {
+	position: absolute;
+	margin-top:18px;
+	height: 92px; /*46px;*/
+}
+	    
+.newsTicker-feedTitle {
+	margin: 0px 6px 0px 6px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}
+	    
+.newsTicker-feedItem {
+	margin-top: 2px;
+}
+
+	.rssSymbol{	/* symbol Heading of RSS item */
+		font-weight:bold;
+		font-family: arial;
+		font-size:46px; /*24px;*/
+		color:#317082;
+		margin:0px;
+		vertical-align:baseline;
+	}
+	.rssVolume{ /*volume of stock*/
+	  color:blue;
+		vertical-align:sub;
+		font-family: arial;
+		font-size:24px;
+	}
+	.rssLast{ /*last price of stock*/
+	  color:blue;
+		vertical-align:super;
+		font-family: arial;
+		font-size:24px;
+	}
+	.rssChangeImage{ /*image price of stock*/
+	  border:0px;
+		margin-bottom:25px;
+		vertical-align:super;
+	}
+	.rssChange{ /*change price of stock*/
+		vertical-align:super;
+		font-family: arial;
+		font-size:24px;
+	}
+  .rssChangeUp{
+		vertical-align:super;
+	  color:#009900;
+		font-family: arial;
+		font-size:24px;
+	}
+	.rssChangeDown{
+		vertical-align:super;
+	  color:#990000;
+		font-family: arial;
+		font-size:24px;
+	}
+	.rssChangeStay{
+		vertical-align:super;
+	  font-weight:normal;
+		font-size:24px;
+	}

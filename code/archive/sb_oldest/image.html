@@ -1,0 +1,98 @@
+<html>
+<head>
+<script language="JavaScript" type="text/javascript">
+<!--
+function loadit(theImage, form) {
+  //form.result.value = "";
+  document.images[0].src = theImage;
+	//document.images[0].width = document.images[0].width / 200 - 3 + '%';
+	//document.images[0].height = document.images[0].height / 140 - 3 + '%';
+	
+	var size = 40;
+	var rsize = size/60;
+	var wd = document.images[0].width;
+	var hg = document.images[0].height;
+	var rwd = wd/60;
+	var rhg = hg/60;
+	
+	
+	if (hg > wd) 
+	{	  
+		if (hg > size) 
+		{
+			var dif = size/hg;
+  		hg = (rhg - (rhg - rsize)) * 60;
+  		wd = (rwd*dif) * 60;		
+		} else {
+	    wd = document.images[0].width;
+	    hg = document.images[0].height;		
+		}
+	} else if (wd > hg) 
+	{
+	  if (wd > size)
+		{
+			var dif = size/wd;
+  		wd = (rwd - (rwd - rsize)) * 60;
+  		hg = (rhg*dif) * 60;
+		} else {
+	    wd = document.images[0].width;
+	    hg = document.images[0].height;		
+		}
+	} else 
+	{
+		var dif = (rwd-rsize)*.9;
+	  if (wd > size) 
+		{
+		  hg = (rhg-dif)*(60);	
+			wd = (rwd-dif)*(60);
+		} else {
+		  hg = (rhg-(rhg*.9))*(60);	
+			wd = (rwd-(rwd*.9))*(60);
+		}
+	}
+	//document.write(rsize + '<br>' + dif + '<br>' + rwd + '=' + wd + '=' + document.images[0].width + '<br>' +rhg + '=' + hg + '=' + document.images[0].height);
+	document.getElementById("wid").width = wd;
+	document.getElementById("wid").height = hg;
+
+	
+
+
+}
+	
+	/*
+	if (hg>wd) {
+	  if (hg>size) {
+		  var dif = rhg-rsize-2%;
+		  document.images[0].height = rhg-dif;	
+			document.images[0].width = rwd-dif;
+		} else {
+		
+		}
+	} else if(wd>hg) {
+	  if (wd>size) {
+		  var dif = rwd-rsize-2%;	
+		  document.images[0].height = rhg-dif;	
+			document.images[0].width = rwd-dif;
+		} else {
+		
+		}
+	} else {
+	  //if equal
+	  if (wd>size) {
+		  var dif = rwd-rsize-2%;	
+		  document.images[0].height = rhg-dif;	
+			document.images[0].width = rwd-dif;
+		} else {
+		
+		}
+	}*/
+//-->
+</script>
+
+</head>
+
+<body onload="loadit('type_B_voice_with.jpg',this.form)">
+<img src="" alt="">
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+
+<div style="height: 126px;">
+
+  <script type="text/javascript">
+  //rssticker_ajax(RSS_id, cachetime, divId, divClass, delay, optionalswitch)
+  //1) RSS_id: "Array key of RSS feed in PHP script"
+  //2) cachetime: Time to cache the feed in minutes (0 for no cache)
+  //3) divId: "ID of DIV to display ticker in. DIV dynamically created"
+  //4) divClass: "Class name of this ticker, for styling purposes"
+  //5) delay: delay between message change, in milliseconds
+  //6) optionalswitch: "optional arbitrary" string to create additional logic in call back function
+  
+    //updated version without logo  bbc-news-logo.jpg
+    //document.write('<div><img src="img/bbc_logo.png" style="background:#00529b;" alt=""></div><div style="float:left;">')
+    document.write('<div style="float:left;">')
+    new rssticker_ajax("BBC", 1200, "ddbox", "bbcclass", 10000, "date+description")
+    document.write('</div>')
+  
+  </script>
+
+</div>

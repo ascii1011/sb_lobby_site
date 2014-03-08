@@ -1,0 +1,29 @@
+
+	/*newsticker customization*/
+	
+
+.bbcclass{
+font-family:arial;
+color:blue;
+width: 594px; /*605px;*/
+height: 116px;
+padding: 6px;
+/*background-color: #648933;*/
+/*background-color: lightyellow;99CC66*/
+border: 0px solid #004A00;
+float:left;
+}
+
+.rsstitle{ /*shared class for all title elements in an RSS feed*/
+/*float:left;*/
+font-weight: bold;
+font-size:20px;
+}
+
+.rssdate{ /*shared class for all date elements in an RSS feed*/
+font-size:12px;
+}
+
+.rssdescription{ /*shared class for all description elements in an RSS feed*/
+font-size:18px;
+}

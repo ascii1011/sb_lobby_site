@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title></title>
+
+<script src="rssticker.js" type="text/javascript">
+
+/***********************************************
+* Advanced RSS Ticker (Ajax invocation)- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+
+</script>
+
+<style type="text/css">
+
+.cnnclass{
+width: 400px;
+padding: 5px;
+background-color: #F3F3F3;
+border: 1px solid black;
+margin-bottom: 1em;
+filter:progid:DXImageTransform.Microsoft.alpha(opacity=80); /*Specify fade effect in IE. Remove if desired.*/
+-moz-opacity: 0.8; /*Specify fade effect in Firefox. Remove if desired.*/
+}
+
+.cnnclass a{
+text-decoration: none;
+}
+
+.bbcclass{
+font-family:arial;
+width: 605px;
+height: 116px;
+padding: 6px;
+/*background-color: #648933;*/
+/*background-color: lightyellow;99CC66*/
+border: 1px solid #004A00;
+}
+
+.rsstitle{ /*shared class for all title elements in an RSS feed*/
+/*float:left;*/
+font-size: 24;
+font-weight: bold;
+}
+
+.rssdate{ /*shared class for all date elements in an RSS feed*/
+font-size: 85%;
+}
+
+.rssdescription{ /*shared class for all description elements in an RSS feed*/
+font-size: 30px;
+}
+
+</style>
+
+</head>
+<body>
+
+<!--current style until fix the image on the working one below >
+<div style="height:80px;width:620px;background:#669900;"  #648933-->
+<!---div style="height:80px;width:620px;background-image: url(greenbg.gif);"-->
+<!--working
+<div style="height: 200px;background:#99CC66 url(http://www.bbc.co.uk/home/release-10-0/img/gradients/bg_green.gif) repeat-x left -74px;">
+-->
+
+
+
+<!--div style="height: 200px;background: url(img/greenbg4.gif) repeat-x;"-->
+<div style="height: 200px;">
+<!--div style="font-color:white;height: 200px;background: black;"-->
+
+
+<!--div style="height: 200px; background-color:#99CC66;"> hello </div-->
+<!--div style="height: 200px; background-color:#c9c9c9; background:#fff url(http://www.bbc.co.uk/home/release-10-0/img/gradients/bg_aqua.gif) repeat-x left -74px;">
+<div style="height: 200px; background-color:#c9c9c9; background:#fff url(http://www.bbc.co.uk/home/release-10-0/img/corners_new.gif) repeat-x left -74px;"-->
+
+
+<script type="text/javascript">
+//rssticker_ajax(RSS_id, cachetime, divId, divClass, delay, optionalswitch)
+//1) RSS_id: "Array key of RSS feed in PHP script"
+//2) cachetime: Time to cache the feed in minutes (0 for no cache)
+//3) divId: "ID of DIV to display ticker in. DIV dynamically created"
+//4) divClass: "Class name of this ticker, for styling purposes"
+//5) delay: delay between message change, in milliseconds
+//6) optionalswitch: "optional arbitrary" string to create additional logic in call back function
+
+//document.write("CNN News: (Fade Effect enabled. Title+date shown)")
+//new rssticker_ajax("CNN", 600, "cnnbox", "cnnclass", 4100, "date")
+/*
+document.write('<div><img src="img/bbc_logo.png" alt=""></div><div style="float:left;">')
+new rssticker_ajax("BBC", 1200, "ddbox", "bbcclass", 10000, "date+description")
+document.write('</div>')
+*/
+document.write('<div style="float:left;color:#00529b;">')
+new rssticker_ajax("BBC", 1200, "ddbox", "bbcclass", 10000, "date+description")
+document.write('</div>')
+
+</script>
+
+</div>
+<!---a href="http://www.dynamicdrive.com/dynamicindex17/rsstickerajax/">Advanced RSS Ticker</a--->
+
+</body>
+
+</html>

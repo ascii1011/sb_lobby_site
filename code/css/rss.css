@@ -1,0 +1,24 @@
+
+	.rssSymbol{	/* Heading of RSS item */
+		font-weight:bold;
+		font-size:18px;
+		color:#317082;
+		margin:0px;
+		vertical-align:baseline;
+	}
+	.rssVolume{ /*volume of stock*/
+	  color:blue;
+		vertical-align:sub;
+	}
+	.rssLast{ /*last price of stock*/
+	  color:blue;
+		vertical-align:super;
+	}
+	.rssChangecolor{ /*last price of stock*/
+	  color:green;
+		vertical-align:super;
+	}
+	.rssChange{ /*last price of stock*/
+	  border:0px;
+		vertical-align:super;
+	}

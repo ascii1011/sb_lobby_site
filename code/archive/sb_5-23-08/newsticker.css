@@ -1,0 +1,41 @@
+
+	/*newsticker customization*/
+	
+.cnnclass{
+width: 400px;
+padding: 5px;
+background-color: #F3F3F3;
+border: 1px solid black;
+margin-bottom: 1em;
+filter:progid:DXImageTransform.Microsoft.alpha(opacity=80); /*Specify fade effect in IE. Remove if desired.*/
+-moz-opacity: 0.8; /*Specify fade effect in Firefox. Remove if desired.*/
+}
+
+.cnnclass a{
+text-decoration: none;
+}
+
+.bbcclass{
+font-family:arial;
+color:blue;
+width: 605px;
+height: 116px;
+padding: 6px;
+/*background-color: #648933;*/
+/*background-color: lightyellow;99CC66*/
+border: 0px solid #004A00;
+}
+
+.rsstitle{ /*shared class for all title elements in an RSS feed*/
+/*float:left;*/
+font-weight: bold;
+font-size:20px;
+}
+
+.rssdate{ /*shared class for all date elements in an RSS feed*/
+font-size:12px;
+}
+
+.rssdescription{ /*shared class for all description elements in an RSS feed*/
+font-size:18px;
+}
